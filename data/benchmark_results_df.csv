@@ -1,0 +1,193 @@
+data,model,scaler,score,test_train
+uci_1,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_1,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.4664622973925299,test
+uci_1,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_1,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5177848249941274,test
+uci_1,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.7055623366915336,train
+uci_1,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5457928118393236,test
+uci_1,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_1,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5092976274371622,test
+uci_2,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_2,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5522727272727274,test
+uci_2,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_2,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5977272727272729,test
+uci_2,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.7065656565656566,train
+uci_2,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5522727272727272,test
+uci_2,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_2,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.584090909090909,test
+uci_3,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_3,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5228870096311956,test
+uci_3,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_3,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5045466290815128,test
+uci_3,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.6992489364518507,train
+uci_3,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5442835330044633,test
+uci_3,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+uci_3,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5819509043927649,test
+db_1,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_1,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5272932755867735,test
+db_1,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_1,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.61213704527354,test
+db_1,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.720145822825838,train
+db_1,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5414169756643546,test
+db_1,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_1,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5439345885969867,test
+db_2,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_2,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5299597442576367,test
+db_2,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_2,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.6001562869997631,test
+db_2,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.7250091115345583,train
+db_2,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.549933696424343,test
+db_2,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_2,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5441226616149658,test
+db_3,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_3,"LogisticRegression(C=1000000000, class_weight=None, dual=False,
+          fit_intercept=True, intercept_scaling=1, max_iter=100,
+          multi_class='ovr', n_jobs=1, penalty='l2', random_state=None,
+          solver='liblinear', tol=0.0001, verbose=0, warm_start=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5318366559763901,test
+db_3,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_3,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5973595609694887,test
+db_3,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.7026019976989486,train
+db_3,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+           weights='uniform')","StandardScaler(copy=True, with_mean=True, with_std=True)",0.5287858175149964,test
+db_3,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",1.0,train
+db_3,"SVC(C=1000000000, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)","StandardScaler(copy=True, with_mean=True, with_std=True)",0.562589340075757,test
