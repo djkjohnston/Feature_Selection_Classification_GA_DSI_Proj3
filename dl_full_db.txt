@@ -1,0 +1,58 @@
+# cell 0
+# !conda install -y psycopg2
+# !conda install -y tqdm
+
+import psycopg2 as pg2
+from psycopg2.extras import RealDictCursor
+from tqdm import tqdm
+import pandas as pd
+import csv
+
+# cell 1
+# connect to postgres server and get header columns (note this is not a dict cursor)
+con = pg2.connect(host='34.211.227.227',dbname='postgres', user='postgres')
+cur = con.cursor(name='customer_cursor')
+
+# Get column names/number for DF
+cur.execute("select column_name from information_schema.columns where table_name='madelon'")
+column_names = [row[0] for row in cur]
+
+cur.close()
+con.close()
+
+# cell 2
+# create a new csv using csv library, note this has 'w'-write to either create or overwrite and existing file, it also uses the dictwriter for input
+csv_name = 'instructor_madelon_test.csv'
+with open(csv_name, 'w') as csvfile:
+dict_writer = csv.DictWriter(csvfile, fieldnames=column_names)
+dict_writer.writeheader()
+
+# cell 3
+# query PostgresSQL server and fetch reasonable batch size and write to csv directly
+# requires new connection and cursor, note this is a dict cursor
+
+BATCH_SIZE = 2000
+SAMPLE_SIZE = 20000
+SAMPLE_PERCENT = 10
+
+con = pg2.connect(host='34.211.227.227',dbname='postgres', user='postgres')
+cur = con.cursor(cursor_factory=RealDictCursor, name='customer_cursor')
+cur.execute('SELECT * FROM madelon TABLESAMPLE SYSTEM ({});'.format(SAMPLE_PERCENT))
+
+pbar = tqdm(total=SAMPLE_SIZE//BATCH_SIZE)
+while True:
+records = cur.fetchmany(size=BATCH_SIZE)
+
+if not records:
+break
+    
+with open(csv_name, 'a') as csvfile:
+dict_writer = csv.DictWriter(csvfile, fieldnames=column_names)
+dict_writer.writerows(records)
+    
+pbar.update(1)
+    
+
+cur.close()
+con.close()
+pbar.close()
