@@ -82,4 +82,4 @@ def load_db():
     
     return Xdb_1, Xdb_2, Xdb_3, ydb_1, ydb_2, ydb_3
 
-#Xdb_1, Xdb_2, Xdb_3, ydb_1, ydb_2, ydb_3 = load_db()
+Xdb_1, Xdb_2, Xdb_3, ydb_1, ydb_2, ydb_3 = load_db()
