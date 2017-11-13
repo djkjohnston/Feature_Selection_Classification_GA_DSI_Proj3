@@ -321,10 +321,36 @@ The least correlated set of five features is `['feat_257', 'feat_526', 'feat_681
 In order to validate this conclusion, I did ran some naive models using only the five identified true predictors.
 
 * Decision Tree: 0.743937
-* LogReg: 0.601051	
+* LogReg: 0.601051
 * Random Forest: 0.826395
 * KNN: 0.796686
 * SVC: 0.787793
 
 Without any hyperparameter tuning, these naive models achieve accuracy scores nearly as strong as the exhaustively tuned model pipelines including `PCA`.  This is a very strong indication that the **true predictors are `['feat_257', 'feat_526', 'feat_681', 'feat_736', 'feat_920']`**
+
+After tuning and some adjustment of pipelines, I was able to achieve the following scores. Please note that `DecisionTreeClassifier` was excluded at this point.
+
+* LogReg: 0.781932093775
+* Random Forest: 0.824373484236
+* KNN: 0.837712206952
+* SVC: 0.820937752627
+
+Please note that the `LogisticRegression` model required the use of `PolynomialFeatures(5)` as a preprrocessing step to achieve the listed score.
+
+\pagebreak
+
+## The Final Countdown... er... Model
+
+Using the tuned model parameters with the complete 200k rows from the DB data, split 50/50 using Train Test Split, I was able to achieve the following scores:
+
+* LogReg: 0.77751000000000003
+* Random Forest: 0.85589000000000004
+* KNN: 0.85938000000000003
+* SVC: -
+
+Unfortunately, the SVC model took too long to fit to include in the results.
+
+I feel moderately confident that I was able to identify the correct true features from the Madelon DB data `['feat_257', 'feat_526', 'feat_681', 'feat_736', 'feat_920']`. With these, I am able to predict classifications with an accuracy well above the benchmark scores with a variety of different approaches, with a lean model pipeline.
+
+
 
